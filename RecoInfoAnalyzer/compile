@@ -1,0 +1,10 @@
+rm run.exe 
+g++ `root-config --cflags` RecoInfoTree.C -c
+
+g++ `root-config --cflags` run.C  RecoInfoTree.o  -o run.exe `root-config --libs`
+
+
+
+
+
+#g++ -Wno-deprecated run.C -o run.exe -I$ROOTSYS/include -L$ROOTSYS/lib `root-config --cflags` `root-config --libs`

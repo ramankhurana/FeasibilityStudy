@@ -1,0 +1,12 @@
+#include "interface/GenInfoTree.h"
+#include <ctime>
+#include <iostream>
+
+using namespace std;
+int main(){   
+  GenInfoTree* geninfo;
+  TTree *tree=0;
+  geninfo = new GenInfoTree(tree);
+  geninfo->Loop();
+  return 1;
+}

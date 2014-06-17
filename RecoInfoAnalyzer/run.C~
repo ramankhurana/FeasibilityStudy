@@ -1,0 +1,15 @@
+#include "RecoInfoTree.C"
+#include "TTree.h"
+#include <ctime>
+#include <iostream>
+
+using namespace std;
+int main(){
+
+  TTree *t=0;
+  RecoInfoTree* recoinfo = new RecoInfoTree(t);
+  recoinfo->Loop();
+  return 1;
+}
+
+
